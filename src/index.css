@@ -1,68 +1,86 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: rgb(234, 194, 212);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}  
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+h2{
+  font-size: 3rem;
+} 
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  transition: background-color 0.5 ease;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.add-button{
+  background-color: green;
+}
+.add-button:hover{
+  background-color: greenyellow;
+}
+
+.delete-button{
+  background-color: rgb(239, 47, 50);
+}
+.delete-button:hover{
+  background-color: rgb(247, 63, 2);
+}
+
+.move-button-up{
+  background-color: rgb(47, 98, 239);
+}
+.move-button-up:hover {
+  background-color: rgb(64, 97, 189);
+}
+
+.move-button-down{
+  background-color: rgb(47, 98, 239);
+}
+.move-button-down:hover {
+  background-color: rgb(64, 97, 189);
+}
+
+  input[type="text"] {
+  font-size: 1rem;
+  padding: 10px;
+  border: 2px solid rgb(2, 2, 2);
+  border-radius: 5px;
+  color: rgb(13, 13, 13);
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: rgb(215, 152, 173);
+  margin-bottom: 10px;
+  border: 3px solid rgb(230, 196, 229);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.delete-button, .move-button-down, .move-button-up{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.buttons {
+  flex: 1;
 }
